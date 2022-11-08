@@ -1,0 +1,140 @@
+body {
+    background-image:url('santhu2.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+    font-familiy:cursive;
+}
+body h1 {
+       -webkit-text-stroke-width: 2px;   
+       -webkit-text-stroke-color: black;    
+       font-family:cursive;
+       text-align:left;
+}
+body h2 {
+       font-family:veradana,cursive;
+}
+.nav {
+    width:100vw;
+}
+ 
+.nav ul {
+    height:40px;
+    list-style:none;
+    margin-left:240px;
+    margin-right:240px;
+    float:left;
+}
+.nav ul li {
+    display: flex;
+    float:left;
+    margin-top:20px;
+    margin-left:20px;
+}
+.nav ul li a {
+    font-family:sans-serif;
+    text-decoration: none;
+    color:#ff00ff;
+    font-size:18px;
+    transition:0.5s ease;
+}
+.nav ul li a:hover {
+    color: #008b8b;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.container h1:nth-child(1) {
+  color: #355c7d;
+  font-family: 'Fira Code', monospace;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  animation: type 3s steps(40,end) forwards;
+}
+
+.container h1:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+  font-weight: 800;
+  font-size: 100px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,14 @@
+﻿body {
+    background-image:url('contact.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-familiy:cursive;
+}
